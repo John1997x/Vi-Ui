@@ -42,6 +42,7 @@
           placeholder,
           required,
           readOnly,
+          step,
           rows,
           type: inputType,
         }"
@@ -115,6 +116,13 @@ export default {
     minLength: {
       type: [String, Number],
       default: null,
+    },
+     /**
+     * _Validação:_ Intervalo numérico minimo 
+     */
+    step: {
+      type: Number,
+      default: 1,
     },
     /**
      * _Validação:_ Valida contra uma expressão regular
